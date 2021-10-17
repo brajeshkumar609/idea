@@ -17,10 +17,10 @@
 </head>
 
 <p>what is your name </p>
-<form action="next" method="POST"
+<form action="next" method="post">
       {% csrf_token %}
 <div class="input-group">
-    <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="name" name="name" placeholder="name">
     <button type="button" class="btn btn-primary btn-lg">Next</button>
 </div></form>
 </html>
