@@ -13,3 +13,15 @@ def next(request):
         ins=quiz(name=name)
         ins.save()
     return render(request, "question1.html")
+def next2(request):
+    if request.method=='POST':
+        name=request.POST['name']
+        ins=quiz(name=name)
+        ins.save()
+    return render(request, "question2.html")
+def next3(request):
+    if request.method=='POST':
+        name=request.POST['name']
+        ins=quiz(name=name)
+        ins.save()
+    return render(request, "summary.html")
